@@ -3,23 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SITE DE PROGRAMAÇÃO</title>
-    <link rel="stylesheet" href="Estilos/style.css">
+    <meta name="description" content="Catálogo de cursos gratuitos de programação — HTML, CSS e JavaScript, no seu ritmo.">
+    <title>Cursos Grátis de Programação</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <header>
-            <h1>CURSOS GRÁTIS</h1>
-            <img src="Imagens/IMAGES/" alt="Cursos de programação">
+    <div class="page">
+
+        <header class="window hero">
+            <div class="window__bar">
+                <span class="window__dots">
+                    <span class="dot dot--red"></span>
+                    <span class="dot dot--yellow"></span>
+                    <span class="dot dot--green"></span>
+                </span>
+                <span class="window__filename">cursos-gratis.html</span>
+            </div>
+            <div class="hero__body">
+                <img class="hero__logo" src="images/logo.png" alt="Logo do catálogo Cursos Grátis">
+                <div class="hero__text">
+                    <p class="eyebrow">// catálogo de estudos</p>
+                    <h1>Cursos grátis<span class="cursor" aria-hidden="true">_</span></h1>
+                    <p class="hero__lead">Uma coleção de cursos gratuitos para quem está começando — ou revisando — o caminho da programação. Sem custo, no seu ritmo.</p>
+                </div>
+            </div>
         </header>
-        <article>
-            <h2>Curso de HTML com CSS</h2>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sed impedit ullam maxime libero, quo laborum nesciunt delectus? Consectetur aliquid quia vero alias non? Quod nesciunt laboriosam aliquid iure dolor. </p>
-        </article>
-        <article>
-            <h2>Curso de JavaScript</h2>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sed impedit ullam maxime libero, quo laborum nesciunt delectus? Consectetur aliquid quia vero alias non? Quod nesciunt laboriosam aliquid iure dolor. </p>
-        </article>
-    </main>
+
+        <main class="courses" aria-label="Lista de cursos">
+
+            <article class="window course-card">
+                <div class="window__bar">
+                    <span class="window__dots">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                    </span>
+                    <span class="window__filename">curso-html-css.html</span>
+                </div>
+                <div class="course-card__media">
+                    <img src="images/curso-html-css.jpg" alt="Curso de HTML com CSS">
+                </div>
+                <div class="course-card__body">
+                    <h2>## Curso de HTML com CSS</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sed impedit ullam maxime libero, quo laborum nesciunt delectus? Consectetur aliquid quia vero alias non? Quod nesciunt laboriosam aliquid iure dolor.</p>
+                    <a class="course-card__cta" href="#">$ começar-curso</a>
+                </div>
+            </article>
+
+            <article class="window course-card">
+                <div class="window__bar">
+                    <span class="window__dots">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                    </span>
+                    <span class="window__filename">curso-javascript.js</span>
+                </div>
+                <div class="course-card__media">
+                    <img src="images/curso-javascript.png" alt="Curso de JavaScript">
+                </div>
+                <div class="course-card__body">
+                    <h2>## Curso de JavaScript</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sed impedit ullam maxime libero, quo laborum nesciunt delectus? Consectetur aliquid quia vero alias non? Quod nesciunt laboriosam aliquid iure dolor.</p>
+                    <a class="course-card__cta" href="#">$ começar-curso</a>
+                </div>
+            </article>
+
+        </main>
+
+        <footer class="footer">
+            <p>// feito com HTML, CSS e café ☕</p>
+        </footer>
+
+    </div>
 </body>
 </html>
